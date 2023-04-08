@@ -1,0 +1,19 @@
+/* 全域設定 */
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+	color: #fff;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+span {
+  display: block;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}

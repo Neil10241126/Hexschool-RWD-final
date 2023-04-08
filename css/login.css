@@ -1,0 +1,220 @@
+@import url(./setting/reset.css);
+@import url(./setting/base.css);
+@import url(./setting/utilituies.css);
+/* --- header --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 15px 0;
+}
+.logo a{
+  width: 120px;
+  height: 24px;
+  background-image: url(../img/logo_w.png);
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  right: -10px;
+  text-align: right;
+}
+.open {
+  display: block;
+}
+.menu a {
+  display: block;
+  padding: 15px 10px 15px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.menu a:hover {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+@media (min-width: 576px) {
+  .menu {
+    position: static;
+    display: flex;
+  }
+  .menu a {
+    padding: 5px 15px;
+    border: 1px solid transparent;
+  }
+  .burger-link {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+/* --- banner --- */
+.banner {
+  height: 420px;
+  background-image: url(../img/header_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  padding: 20px 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.title h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.text-desktop {
+  display: none;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .banner {
+    background-image: url(../img/header_desktop.png);
+  }
+  .title {
+    padding: 40px 30px;
+  }
+}
+@media (min-width: 992px) {
+  .text-mobile {
+    display: none;
+  }
+  .text-desktop {
+    display: block;
+  }
+}
+/* ---login--- */
+.login {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.login-item {
+  width: 300px;
+  text-align: center;
+}
+.login-item h3 {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+.form {
+  padding: 15px;
+  text-align: left;
+  border-top: 3px solid #f56c23;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+.form h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.form label {
+  margin-top: 15px;
+  display: block;
+}
+.form-input {
+  position: relative;
+}
+.form-input i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.form-input input {
+  width: 100%;
+  border: none;
+  padding: 8px 0 8px 35px;
+  margin-top: 3px;
+}
+.form a {
+  font-size: 14px;
+  color: #ff5e45;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.signup-btn, .login-btn {
+  font-size: 14px;
+  width: 125px;
+  padding: 5px 0;
+  border: none;
+  color: #fff;
+}
+.signup-btn {
+  background: gray;
+}
+.login-btn {
+  background: #f56c23;
+}
+.signup-btn:hover, .login-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* ---footer--- */
+.footer {
+  padding-bottom: 50px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.about h3, .contract h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.contract {
+  margin: 30px 0;
+}
+.contract ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.fans {
+  text-align: right;
+}
+.fans-img img {
+  margin-bottom: 20px;
+}
+.fans-group a {
+  margin-left: 10px;
+}
+.fans-group a:hover {
+  opacity: 0.7;
+}
+@media (min-width: 992px) {
+  .footer-item {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .about, .contract, .fans {
+    width: 30%;
+  }
+  .contract {
+    margin-top: 0;
+  }
+}
